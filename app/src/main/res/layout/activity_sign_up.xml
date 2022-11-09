@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/bgSignUpIMG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bloodddd"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="40dp"
+        >
+
+        <EditText
+            android:id="@+id/nameSignUpET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Full Name"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/addressSignUpET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Your Address"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/mobSignUpET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="phone"
+            android:hint="Mobile Number"
+            android:minHeight="48dp" />
+
+        <Spinner
+            android:id="@+id/spinnerSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/lastDonationSUET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:hint="Last Donation Date"
+                android:inputType="date"
+                android:longClickable="false"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:minHeight="48dp" />
+
+            <ImageButton
+                android:id="@+id/dateButton"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_calendar_month_24"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/nextTimeDonationET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="date"
+                android:layout_weight="2"
+                android:longClickable="false"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Interval for next Donation"
+                android:minHeight="48dp" />
+
+            <ImageButton
+                android:id="@+id/intervalDateButton"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_calendar_month_24"/>
+
+
+        </LinearLayout>
+
+
+
+        <CheckBox
+            android:id="@+id/hIssuesCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#E03125"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.02"
+            android:text="Do You Have Some Health Issues?" />
+
+        <EditText
+            android:id="@+id/healthIssuesSUET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Health Issues.."
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/submitSignUpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Submit"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

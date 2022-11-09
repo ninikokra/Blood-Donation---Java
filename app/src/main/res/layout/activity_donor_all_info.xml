@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonorAllInfo">
+
+    <ImageView
+        android:id="@+id/bgDonor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/donorblood"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donor Name: "
+            android:textColor="#3A3333"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/nameInfoTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:minHeight="48dp"
+            android:background="@drawable/shape_bg"
+            android:backgroundTint="#322E2222"
+            android:padding="5dp"
+            android:textColor="#EFE2E2"
+            android:text="Nini Kokrashvili"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donor Phone Number:"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#3A3333"
+            android:layout_marginEnd="20dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/mobInfoTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:minHeight="48dp"
+            android:padding="5dp"
+            android:textColor="#EFE2E2"
+            android:background="@drawable/shape_bg"
+            android:backgroundTint="#322E2222"
+            android:text="Nini Kokrashvili"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donor Address:"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="#3A3333"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/addressInfoTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:minHeight="48dp"
+            android:textColor="#EFE2E2"
+            android:padding="5dp"
+            android:background="@drawable/shape_bg"
+            android:backgroundTint="#322E2222"
+            android:text="Nini Kokrashvili"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Donation:"
+            android:textColor="#CDE3CA"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Type:"
+            android:textColor="#BCE4B7"
+            android:textStyle="bold"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"/>
+
+
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/lastDonInfoTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg"
+                android:backgroundTint="#322E2222"
+                android:textColor="#EFE2E2"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:text="Nini Kokrashvili"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bloodTypeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:background="@drawable/shape_bg"
+                android:backgroundTint="#322E2222"
+                android:textColor="#EFE2E2"
+                android:text="Nini Kokrashvili"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Days Left : "
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:textColor="#E8EDE8"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health Issues:"
+                android:textStyle="bold"
+                android:textColor="#DDE8DC"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="12dp"
+                android:textSize="18sp"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nextDonInfoTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:background="@drawable/shape_bg"
+                android:backgroundTint="#322E2222"
+                android:textColor="#EFE2E2"
+                android:text="Nini Kokrashvili"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/healthIssuesInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:background="@drawable/shape_bg"
+                android:backgroundTint="#322E2222"
+                android:textColor="#EFE2E2"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/callDonorButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="bottom"
+                android:backgroundTint="#257829"
+                android:drawableRight="@drawable/ic_baseline_phone_forwarded_24"
+                android:text="Call To Donor!"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

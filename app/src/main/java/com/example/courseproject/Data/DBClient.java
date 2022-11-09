@@ -12,7 +12,7 @@ public class DBClient {
     public DBClient(Context context){
         this.context = context;
         appDataBase = Room.databaseBuilder(context,AppDataBase.class,
-                "niniko").build();
+                "giorgi").build();
     }
     public static synchronized DBClient getInstance(Context context){
         if (mainInstance == null){

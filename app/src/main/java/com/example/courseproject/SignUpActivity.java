@@ -116,12 +116,15 @@ public class SignUpActivity extends AppCompatActivity {
                     @SuppressLint("SetTextI18n")
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                        if (month<10){
-                            nextDonationSUET.setText(year + "-0" + (month+1) + "-" + dayOfMonth);
+                        if (month<10 && dayOfMonth<10){
+                            nextDonationSUET.setText(year + "-0" + (month+1) + "-0" + dayOfMonth);
                         }
-                        else if (dayOfMonth<10){
+                        else if (month<10){
+                            nextDonationSUET.setText(year + "-0" + (month+1) + "-" + dayOfMonth);
+                        }else if (dayOfMonth<10){
                             nextDonationSUET.setText(year + "-" + (month+1) + "-0" + dayOfMonth);
-                        }else{
+                        }
+                        else{
                             nextDonationSUET.setText(year + "-" + (month+1) + "-" + dayOfMonth);
 
                         }
